@@ -18,9 +18,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-cmake_minimum_required(VERSION 3.5)
+function(add_genepi_example example)
+    add_genepi_library(genepi-${example} "${CMAKE_CURRENT_LIST_DIR}/${example}.cpp")
+endfunction()
 
-
-find_package(genepi REQUIRED PATHS ${PROJECT_SOURCE_DIR}/node_modules/@geode/genepi/build)
-
-add_genepi_library(genepi-entity "${PROJECT_SOURCE_DIR}/src/entity.cpp")
+add_genepi_example(entity)

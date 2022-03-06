@@ -17,22 +17,22 @@ GENEPI_MODULE( entity );
 
 entity::entity()
 {
-    printf("entity");
+    printf("entity\n");
 }
 
 entity::~entity()
 {
-    printf("~entity");
+    printf("~entity\n");
 }
 
 bool entity::open()
 {
-    printf("entity open");
+    printf("entity open\n");
 }
 
 void entity::close()
 {
-    printf("entity close");
+    printf("entity close\n");
 }
 
 /*

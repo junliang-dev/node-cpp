@@ -84,6 +84,6 @@ configure_package_config_file(
     INSTALL_DESTINATION .
 )
 
-if(EXISTS ${PROJECT_SOURCE_DIR}/examples)
-    add_subdirectory(examples)
+if(EXISTS ${PROJECT_SOURCE_DIR}/sdk)
+    add_subdirectory(sdk)
 endif()

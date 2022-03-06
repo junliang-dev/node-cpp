@@ -7,6 +7,20 @@
 /************************************************************************/
 #pragma once
 
+
+
+class entity
+{
+public:
+    entity();
+    ~entity();
+    bool open();
+    void close();
+
+};
+
+
+/*
 #include "../reflection/yy_reflection.h"
 
 struct Point
@@ -34,3 +48,4 @@ public:
 private: 
     Point m_pos;
 };
+*/
